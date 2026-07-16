@@ -1,0 +1,4 @@
+# Placeholder for the future communication layer.
+#
+# Transport implementations (Named Pipes, TCP, Shared Memory, etc.)
+# will be added when MGX requires inter-process or distributed communication.

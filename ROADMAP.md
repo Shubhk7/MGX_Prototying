@@ -1,33 +1,42 @@
-# MGX Roadmap
+# MGX Roadmap (Version 1)
 
-## v0.1
-- Repository setup
-- Project architecture
-- Camera module
+This roadmap covers only the current version of MGX: a Windows desktop gesture-control application. Milestones are added or refined as they are actually scheduled — this file is not a place for future-framework ideas (see `PROJECT_RULES.md` for what's out of scope).
 
-## v0.2
-- Hand landmark detection
+## Milestone 1 — Repository & Camera Foundation
+- Repository housekeeping (structure, tooling, coding standards)
+- Camera detection and selection
+- Live camera preview
+- FPS counter
 
-## v0.3
-- Gesture recognition
+## Milestone 2 — Hand Vision
+- Hand detection
+- Hand landmark extraction
+- Skeleton visualization
 
-## v0.4
-- Event dispatcher
+## Milestone 3 — Gesture Recognition
+- Recognize: Open Palm, Closed Fist, Pinch, Point, Peace Sign
 
-## v0.5
-- Desktop automation
+## Milestone 4 — Event Dispatch
+- Internal event system connecting gesture recognition to desktop actions
 
-## v0.6
-- GUI
+## Milestone 5 — Desktop Control
+- Mouse movement, left/right/double click, scroll
+- Volume and media controls
+- Browser back/forward, Alt+Tab, Win+D
 
-## v0.7
-- Profiles
+## Milestone 6 — GUI
+- Application window, live preview, skeleton overlay
+- Diagnostics panel (camera FPS, recognition FPS, current gesture, active profile)
 
-## v0.8
-- Plugin system
+## Milestone 7 — Profiles
+- Save, load, and edit gesture-mapping profiles
 
-## v0.9
-- Optimization
+## Milestone 8 — Settings
+- Camera, sensitivity, gesture mapping, theme, startup options
 
-## v1.0
-- Public Release
+## Milestone 9 — Logging & Polish
+- Application event/error/warning logging
+- Stability and UX polish pass
+
+## v1.0 — Release
+- First stable Windows release of MGX

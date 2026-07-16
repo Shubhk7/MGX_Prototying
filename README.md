@@ -2,48 +2,48 @@
 
 > Motion Gesture Execution Engine
 
-MGX is a modular, cross-platform gesture recognition and desktop automation framework that enables users to control their computer using natural hand gestures through a webcam.
+MGX is a Windows desktop application that lets you control your computer using hand gestures captured through a webcam.
 
-## Vision
+## Status
 
-Create a fast, extensible, and privacy-focused gesture interaction platform that works across Windows, Linux, and macOS.
+🚧 Under active development — Version 0.1.0-dev
 
-## Current Status
+## What MGX Does
 
-🚧 Under Active Development
+- Detects your hand through a webcam using computer vision
+- Recognizes a small set of reliable gestures (open palm, closed fist, pinch, point, peace sign)
+- Maps recognized gestures to desktop actions (mouse movement, clicks, scroll, volume, media controls, browser navigation, Alt+Tab, Win+D)
+- Lets you save, load, and edit gesture profiles
+- Shows live diagnostics: camera FPS, recognition FPS, current gesture, active profile
 
-Current Version: v0.1.0-dev
+## Platform
 
-## Planned Features
-
-- Cross-platform desktop control
-- Modular gesture recognition engine
-- Plugin system
-- Multiple user profiles
-- Low latency execution
-- Local processing (no cloud required)
+Windows only. This is the only platform supported in the current version.
 
 ## Architecture
 
-Camera
-↓
-Vision Engine
-↓
-Gesture Recognition
-↓
-Gesture Interpreter
-↓
-Transport Layer
-↓
-Platform Layer
-↓
-Desktop Actions
-↓
-GUI
+```
+Camera → Vision Engine → Gesture Recognition → Event Dispatch → Desktop Actions
+                                                        ↓
+                                                       GUI
+```
+
+## Tech Stack
+
+- C++20 (GCC / MSYS2)
+- Python
+- CMake
+- PyQt6
+- OpenCV
+- MediaPipe
 
 ## Roadmap
 
-See ROADMAP.md
+See [ROADMAP.md](ROADMAP.md).
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [PROJECT_RULES.md](PROJECT_RULES.md).
 
 ## License
 
